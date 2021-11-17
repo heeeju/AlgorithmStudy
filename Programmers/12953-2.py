@@ -1,5 +1,5 @@
 def solution(arr):
-    def gcd(x,y):
+    def gcd(x,y): #from math import gcd 사용가능
         while y:
             x, y = y, x % y
         return x
