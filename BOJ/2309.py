@@ -1,4 +1,4 @@
-info = list(map(int, input().split()))
+info = sorted([int(input()) for i in range(9)])
 num = sum(info)-100
 flag = 0
 
