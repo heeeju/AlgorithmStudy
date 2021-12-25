@@ -10,7 +10,6 @@ else:
     right = S[i+1]
     if N in range(left, right):
       break
-
   left += 1
   right -= 1
   print((right - left) + (N-left)*(right-N))
