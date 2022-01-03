@@ -1,3 +1,5 @@
+#메모리 67592KB
+#시간 3488ms
 result = []
 
 def erase(y, x, n):
