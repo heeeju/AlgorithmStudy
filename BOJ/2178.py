@@ -1,8 +1,11 @@
 from collections import deque
 from sys import stdin
 
+n, m = map(int, input().split())
+info = [list(map(int, input())) for _ in range(n)]
+depth = []
+
 def bfs():
-  global n, m, info, depth
   visited = []
   stack = deque([[0,0,1]])
   while stack:
@@ -24,14 +27,6 @@ def bfs():
       #오른쪽
       if j+1 < m and info[i][j+1] == 1:
         stack.append([i, j+1, d+1])
-
-n, m = map(int, input().split())
-
-info = []
-depth = []
-
-for _ in range(n):
-  info.append(list(map(int, list(input().strip()))))
 
 bfs()
 print(min(depth))
