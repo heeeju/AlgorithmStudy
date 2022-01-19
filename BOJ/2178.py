@@ -1,7 +1,7 @@
 from collections import deque
 from sys import stdin
 
-def dfs():
+def bfs():
   global n, m, info, depth
   visited = []
   stack = deque([[0,0,1]])
@@ -33,5 +33,5 @@ depth = []
 for _ in range(n):
   info.append(list(map(int, list(input().strip()))))
 
-dfs()
+bfs()
 print(min(depth))
