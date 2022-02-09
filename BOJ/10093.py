@@ -1,7 +1,6 @@
 a, b = map(int, input().split())
 a, b = min(a, b), max(a, b)
 
-n = b-a-1
 if b == a:
     print(0)
 else:
