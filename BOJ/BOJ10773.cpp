@@ -9,7 +9,7 @@ int main(){
 
     int k;
     cin >> k;
-    for(int i=0; i<k; i++){ //이거를 while(k--)로 하는 습관 들이기!!
+    for(int i=0; i<k; i++){ 
         int n; 
         cin >> n;
         if(n==0) s.pop();
