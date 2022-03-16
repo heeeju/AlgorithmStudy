@@ -25,7 +25,7 @@ void size(){
 void empty(){
     if(s.empty()) cout << 1 << '\n';
     else cout << 0 << '\n';
-    //cout << (int)s.empty() << '\n'; 
+    //cout << (int)s.empty() << '\n'; bool -> int
 }
 
 void top(){
